@@ -4,14 +4,6 @@
     
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-        <!-- Obtenir el titol de la pàgina -->
-        <?php
-            $app = JFactory::getApplication();
-            $this->setTitle( $this->getTitle() . ' - ' . $app->getCfg( 'sitename' ) );
-        ?>
-        <!-- Final del titol de la pàgina -->
-
         <jdoc:include type="head" />
 
         <!-- Afegir estils CSS -->
