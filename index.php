@@ -15,7 +15,7 @@
     </head>
     
     <body>
-        <div class="contanier">
+        <div class="container">
             
             <?php if ($this->countModules( 'superior' )) : ?>
                 <div class="row-fluid">
