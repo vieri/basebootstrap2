@@ -23,12 +23,19 @@
     </head>
     
     <body>
-        <?php if ($this->countModules( 'superior' )) : ?>
-            <jdoc:include type="modules" name="superior" style="xhtml" /> 
-        <?php endif; ?>
+        <div class="contanier">
+            
+            <?php if ($this->countModules( 'superior' )) : ?>
+                <div class="row-fluid">
+                    <div class="span12">
+                        <jdoc:include type="modules" name="superior" style="xhtml" /> 
+                    </div>
+                </div>
+            <?php endif; ?>
 
-        <jdoc:include type="component" />
-        <jdoc:include type="modules" name="bottom" />
+            <jdoc:include type="component" />
+            <jdoc:include type="modules" name="bottom" />
+        </div>
 
         <!-- Afegir JS -->
         <script src="http://code.jquery.com/jquery.js"></script>
