@@ -1,4 +1,8 @@
-<?php defined('_JEXEC') or die('Restricted access');?>
+<?php 
+
+defined('_JEXEC') or die('Restricted access');
+// JHtml::_('bootstrap.framework');
+?>
 <!DOCTYPE html>
 <html xml:lang="<?php echo $this->language; ?>" lang="<?php echo $this->language; ?>" >
     
@@ -44,7 +48,7 @@
                                     <!-- <a class="brand" href="#">Project name</a> -->
 
                                     <div class="nav-collapse collapse">
-                                        <jdoc:include type="modules" name="menu" style="xhtml" /> 
+                                        <jdoc:include type="modules" name="menu" /> 
                                     </div>
 
                                 </div>
@@ -66,6 +70,24 @@
         </div>
 
         <!-- Afegir JS -->
+        <script type="text/javascript">
+          (function(jQuery){   
+            jQuery(document).ready(function(){
+              // dropdown
+              jQuery('.parent').addClass('dropdown');
+              jQuery('.parent > a').addClass('dropdown-toggle');
+              jQuery('.parent > a').attr('data-toggle', 'dropdown');
+              jQuery('.parent > a').append('<b class="caret"></b>');
+              jQuery('.parent > ul').addClass('dropdown-menu');
+              jQuery('ul.dropdown-menu li.dropdown a.dropdown-toggle').hover(
+                  function () {
+                    jQuery('ul.dropdown-menu li.dropdown').removeClass('open');
+                    jQuery(this).parent().addClass('open');
+                  }
+              );
+            });
+          })(jQuery);
+        </script>
         <script src="http://code.jquery.com/jquery.js"></script>
         <script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/js/bootstrap.min.js"></script>
         <!-- Final JS -->
