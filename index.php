@@ -24,12 +24,46 @@
                     </div>
                 </div>
             <?php endif; ?>
+
+            <!-- Menu -->
+            <?php if ($this->countModules( 'menu' )) : ?>
+                <div class="row-fluid">
+                    <div class="span12">
+                        <div class="navbar">
+                          <div class="navbar-inner">
+                            <div class="container">
+                         
+                              <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+                              <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                              </a>
+                         
+                              <!-- Be sure to leave the brand out there if you want it shown -->
+                              <!-- <a class="brand" href="#">Project name</a> -->
+                         
+                              <!-- Everything you want hidden at 940px or less, place within here -->
+                              <div class="nav-collapse collapse">
+                                <jdoc:include type="modules" name="menu" style="xhtml" /> 
+                              </div>
+                         
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            <?php endif; ?>
+            <!-- Menu -->
+            
+            <!-- Mostrar contingut -->
             <div class="row-fluid">
                 <div class="span12">
                     <jdoc:include type="component" />
                 </div>
             </div>
-            <jdoc:include type="modules" name="bottom" />
+            <!-- Fi contingut -->
+
         </div>
 
         <!-- Afegir JS -->
