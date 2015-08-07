@@ -5,12 +5,12 @@
 }
 
 .navbar-inner {
-    background-color: transparent;
-    background-image: none;
-    border: none;
-    border-radius: none;
-    box-shadow: none;
-    
+    background-color: transparent !important;
+    background-image: none !important;
+    border: none !important;
+    border-radius: none !important;
+    box-shadow: none !important;
+
 }
 
 /*Estils personalitzats per el Menu*/
