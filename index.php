@@ -24,8 +24,11 @@
                     </div>
                 </div>
             <?php endif; ?>
-
-            <jdoc:include type="component" />
+            <div class="row-fluid">
+                <div class="span12">
+                    <jdoc:include type="component" />
+                </div>
+            </div>
             <jdoc:include type="modules" name="bottom" />
         </div>
 
