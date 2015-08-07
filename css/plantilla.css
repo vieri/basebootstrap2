@@ -1,5 +1,16 @@
 
-
+/*Estils personalitzats per el Menu*/
 .marge-superior-menu {
     margin-top: 20px;
 }
+
+.navbar-inner {
+    background-color: transparent;
+    background-image: none;
+    border: none;
+    border-radius: none;
+    box-shadow: none;
+    
+}
+
+/*Estils personalitzats per el Menu*/
