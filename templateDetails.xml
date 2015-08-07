@@ -16,6 +16,13 @@
         <folder>css</folder>
     </files>
     <positions>
-        
+        <position>superior</position>
+        <position>logotip</position>
+        <position>menu</position>
+        <position>destacat</position>
+        <position>dreta</position>
+        <position>esquerra</position>
+        <position>inferior</position>
+        <position>peu</position>
     </positions>
 </extension>
